@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -eu
+set -eux
 
 scripts="$(dirname "$0")/../../scripts"
 
