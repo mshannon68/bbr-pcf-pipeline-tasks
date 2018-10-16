@@ -2,8 +2,11 @@
 
 set -eu
 
+scripts="$(dirname "$0")/../../scripts"
+
 # shellcheck disable=SC1090
-source "$(dirname "$0")/../../scripts/export-director-metadata"
+source "$scripts/export-director-metadata"
+#source "$(dirname "$0")/../../scripts/export-director-metadata"
 
 pushd director-backup-artifact
   ../binary/bbr director --host "${BOSH_ENVIRONMENT}" \
