@@ -8,9 +8,6 @@ scripts="$(dirname "$0")/../../scripts"
 source "$scripts/export-director-metadata"
 #source "$(dirname "$0")/../../scripts/export-director-metadata"
 
-source "$scripts/export-cf-metadata"
-
-
 pushd director-backup-artifact
   ../binary/bbr director --host "${BOSH_ENVIRONMENT}" \
     --username "$BOSH_USERNAME" \
